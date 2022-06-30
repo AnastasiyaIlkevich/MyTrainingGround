@@ -1,6 +1,5 @@
 package OvO.BooleanOperations.Practice;
 
-import java.security.Signature;
 import java.util.Scanner;
 
 public class BooleanOperations_1 {
