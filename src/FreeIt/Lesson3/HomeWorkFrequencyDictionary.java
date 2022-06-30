@@ -1,4 +1,4 @@
-package Lesson3;
+package FreeIt.Lesson3;
 
 public class HomeWorkFrequencyDictionary {
 
