@@ -53,18 +53,18 @@ public class HomeWorkFrequencyDictionary {
 //        //length             1      2        3       4
 
         for (int i = 0; i < worlds.length; ++i) {
-            int count = 1;
-            if (worlds[i] != null) {
-                for (int g = i + 1; g < worlds.length; ++g) {
+                int count = 1;
+                if (worlds[i] != null) {
+                    for (int g = i + 1; g < worlds.length; ++g) {
 
-                    if (worlds[i].equals(worlds[g])) {
-                        ++count;
-                        worlds[g] = null;
+                        if (worlds[i].equals(worlds[g])) {
+                            ++count;
+                            worlds[g] = null;
+                        }
                     }
+                    System.out.printf("Слово -> %s, а счетчик -> %s", worlds[i], count);
+                    System.out.println();
                 }
-                System.out.printf("Слово -> %s, а счетчик -> %s", worlds[i], count);
-                System.out.println();
-            }
         }
     }
 }
