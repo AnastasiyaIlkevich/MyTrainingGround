@@ -1,27 +1,47 @@
 package FreeIt.Lesson5;
 
-//Создать класс записной книжки, в котором хранятся записи дел.
-// Создать в этом классе метод, который выводит частотный словарь
-// для определенной записи (запись можно определить по номеру/индексу)
+import java.util.Arrays;
+
 public class Notebook {
+    Note[] note = new Note[370];
 
-    String day;
-    String activity;
+    public void search(String activity) {
+        int count = 0;
+        boolean search = false;
+
+        for (int i = 0; i < note.length; i++) {
+            if (note[i] == null) {
+                continue;
+            } else if (note[i].activity.equals(activity)) {
+                ++count;
+                search = true;
+            }
+        }
+        if (search) {
+            System.out.println(activity + " встречается " + count + " р.");
+        } else {
+            System.out.println("Такой активности нет " + activity);
+        }
 
 
-//    public String getActivity() {
 
-    public Notebook(String day, String activity) {
-        this.day = day;
-        this.activity = activity;
     }
 
+    public void save(String day, String activity) {
+
+        for (int i = 0; i < note.length; i++) {
+            if (note[i] == null) {
+                note[i] = new Note(day, activity);
+                System.out.println("   " + note[i]);
+                break;
+            }
+        }
+    }
 
     @Override
     public String toString() {
-        return "Notebook{" +
-                "day='" + day + '\'' +
-                ", activity='" + activity + '\'' +
+        return "Diary{" +
+                "notebook=" + Arrays.toString(note) +
                 '}';
     }
 }
