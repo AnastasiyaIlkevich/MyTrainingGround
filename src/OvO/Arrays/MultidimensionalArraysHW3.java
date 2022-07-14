@@ -6,16 +6,6 @@ import java.util.Scanner;
 public class MultidimensionalArraysHW3 {
 
     public static void main(String[] args) {
-        //1 5 3 4
-        //6 4 2 3
-        //6 3 7 5
-        //7 4 1 6
-        //Вывод:
-        //7 5 3 4
-        //6 4 2 3
-        //6 3 1 5
-        //7 4 1 6
-        //в задаче ошибка. Отсутсвует строчка которую мы копируем в диагональ.
 
         Scanner scanner = new Scanner(System.in);
         Random random = new Random();
@@ -32,11 +22,7 @@ public class MultidimensionalArraysHW3 {
         arrayOutput(array, m);
 
         for (int i = 0; i < m; i++) {
-            for (int j = 0; j < m; j++) {
-                if (i == j) {
-                    array[i][j] = array[string][j];
-                }
-            }
+            array[i][i] = array[string][i];
         }
         arrayOutput(array, m);
     }
