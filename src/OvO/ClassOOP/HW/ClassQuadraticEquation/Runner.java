@@ -17,14 +17,8 @@ public class Runner {
 
         QuadraticEquation qe = new QuadraticEquation(a, b, c);
 
-        int disc = qe.discriminantCalculation();
 
-        if (disc == 0) {
-            System.out.println(disc + " =0");
-        } else if (disc > 0) {
-            System.out.println(disc + " >0");
-        } else {
-            System.out.println(disc + " <0");
-        }
+        qe.setRoot(qe.discriminantCalculation());
+        System.out.println(qe);
     }
 }
