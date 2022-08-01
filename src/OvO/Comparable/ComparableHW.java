@@ -1,7 +1,6 @@
 package OvO.Comparable;
 
 import java.util.ArrayList;
-import java.util.Collections;
 import java.util.List;
 
 public class ComparableHW {
@@ -12,9 +11,6 @@ public class ComparableHW {
         for (int i = 0; i < 6; i++) {
             list.add(new Animal(names[i]));
         }
-        System.out.println(list);
-        Collections.sort(list);
-        System.out.println(list);
 
     }
 }
@@ -33,7 +29,7 @@ class Animal implements Comparable<Animal> {
     @Override
     public int compareTo(Animal o) {
 
-        return name.charAt(0) - o.getName().charAt(0);//name.charAt(0) - o.getName().charAt(0);
+        return name.charAt(0) - o.getName().charAt(0);
     }
 
     @Override
