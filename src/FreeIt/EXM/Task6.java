@@ -1,4 +1,4 @@
-package FreeIt.Tinkof;
+package FreeIt.EXM;
 
 
 import java.io.BufferedReader;
