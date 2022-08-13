@@ -1,0 +1,40 @@
+задание
+Игра в слова.
+Загадываем слово и вводим другое слово такой же длинны.
+Если буква совпала по значению и индексу то correct.
+Если буква совпала по значению то present.
+Если не совпала по значению.
+-----test 1
+ввод
+cover
+clear
+
+вывод
+correct
+absent
+present
+absent
+correct
+
+-----test 2
+ввод
+ABBA
+AAAA
+
+вывод
+correct
+absent
+absent
+correct
+
+-----test 3
+ввод
+ABCBC
+BBACA
+
+вывод
+present
+correct
+present
+present
+absent
