@@ -1,6 +1,5 @@
 package YandexEx2022.TaskA;
 
-import java.awt.image.BufferedImageFilter;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
@@ -42,5 +41,17 @@ public class TaskB {
         System.out.println(Arrays.deepToString(arrayCandidates));
 
 
+        for (int i = 0; i < arrayVacancies.length; i++) {
+            int temp = 0;
+            for (int j = 0; j < arrayCandidates.length; j++) {
+               if(arrayVacancies[i][0].equals(arrayCandidates[j][1])){
+                   System.out.println(arrayCandidates[j][0]);
+                   ++temp;
+               }
+               if (temp==Integer.parseInt(arrayVacancies[i][1])){
+                   break;
+               }
+            }
+        }
     }
 }
