@@ -1,4 +1,4 @@
-package OvO.Thread.MetodRun;
+package OvO.Thread.EextendsThread;
 
 public class ThreadEx {
     public static void main(String[] args) {

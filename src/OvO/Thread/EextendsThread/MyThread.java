@@ -1,4 +1,4 @@
-package OvO.Thread.MetodRun;
+package OvO.Thread.EextendsThread;
 
 import java.util.Date;
 
