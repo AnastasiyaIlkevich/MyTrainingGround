@@ -1,4 +1,4 @@
-package OvO.Wrapper.HW;
+package OvO.Wrapper;
 
 public class PrimitiveDataTypes {
 
