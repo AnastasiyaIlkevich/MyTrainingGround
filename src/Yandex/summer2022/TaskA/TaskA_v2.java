@@ -1,4 +1,4 @@
-package YandexEx2022.TaskA;
+package Yandex.summer2022.TaskA;
 
 import java.io.BufferedReader;
 import java.io.IOException;
