@@ -1,4 +1,4 @@
-package OvO.ClassOOP.HW.ClassBird;
+package OvO.ClassOOP.ClassBird;
 
 public interface Bird {
 

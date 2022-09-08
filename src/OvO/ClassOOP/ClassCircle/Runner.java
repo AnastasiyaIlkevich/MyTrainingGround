@@ -1,4 +1,4 @@
-package OvO.ClassOOP.HW.ClassCircle;
+package OvO.ClassOOP.ClassCircle;
 
 import java.util.Scanner;
 

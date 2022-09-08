@@ -1,4 +1,4 @@
-package OvO.ClassOOP.HW.ClassCustomer2;
+package OvO.ClassOOP.ClassCustomer2;
 
 import java.util.Scanner;
 

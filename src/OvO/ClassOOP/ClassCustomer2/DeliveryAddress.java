@@ -1,4 +1,4 @@
-package OvO.ClassOOP.HW.ClassCustomer2;
+package OvO.ClassOOP.ClassCustomer2;
 
 public class DeliveryAddress extends Address{
 

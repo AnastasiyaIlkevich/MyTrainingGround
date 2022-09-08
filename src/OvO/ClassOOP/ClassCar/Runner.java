@@ -1,4 +1,4 @@
-package OvO.ClassOOP.HW.ClassCar;
+package OvO.ClassOOP.ClassCar;
 
 public class Runner {
 

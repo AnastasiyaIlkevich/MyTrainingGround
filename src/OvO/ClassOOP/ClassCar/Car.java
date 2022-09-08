@@ -1,4 +1,4 @@
-package OvO.ClassOOP.HW.ClassCar;
+package OvO.ClassOOP.ClassCar;
 
 import java.util.Objects;
 

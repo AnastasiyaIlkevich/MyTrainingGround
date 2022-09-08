@@ -1,4 +1,4 @@
-package OvO.ClassOOP.HW.ClassCustomer;
+package OvO.ClassOOP.ClassCustomer;
 
 public class Address {
 

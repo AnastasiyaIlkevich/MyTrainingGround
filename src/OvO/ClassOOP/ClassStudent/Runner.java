@@ -1,4 +1,4 @@
-package OvO.ClassOOP.HW.ClassStudent;
+package OvO.ClassOOP.ClassStudent;
 
 import java.util.Scanner;
 

@@ -1,4 +1,4 @@
-package OvO.ClassOOP.HW.ClassQuadraticEquation;
+package OvO.ClassOOP.ClassQuadraticEquation;
 
 import java.util.Scanner;
 

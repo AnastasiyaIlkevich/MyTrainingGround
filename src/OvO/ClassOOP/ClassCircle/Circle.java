@@ -1,4 +1,4 @@
-package OvO.ClassOOP.HW.ClassCircle;
+package OvO.ClassOOP.ClassCircle;
 
 public class Circle {
 
