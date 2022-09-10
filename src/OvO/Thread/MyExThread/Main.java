@@ -8,7 +8,7 @@ public class Main {
 
     public static void main(String[] args) {
 
-          ThreadEx2 threadEx2 = new ThreadEx2();
+/*          ThreadEx2 threadEx2 = new ThreadEx2();
 
           Thread thread1 = new Thread(threadEx2);
           thread1.start();
@@ -21,7 +21,22 @@ public class Main {
             e.printStackTrace();
         }
 
-        System.out.println(threadEx2.getX());
+        System.out.println(threadEx2.getX());*/
+
+        ThreadExSynchronized threadExSynchronized = new ThreadExSynchronized();
+
+        Thread thread1 = new Thread(threadExSynchronized);
+        thread1.start();
+        Thread thread2 = new Thread(threadExSynchronized);
+        thread2.start();
+
+        try {
+            Thread.sleep(2000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+
+        System.out.println(threadExSynchronized.getX());
 
 
     }
