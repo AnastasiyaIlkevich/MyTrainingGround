@@ -11,13 +11,14 @@ import java.util.concurrent.Semaphore;
 public class MainPool {
 
     public static void main(String[] args) {
+        Semaphore semaphore = new Semaphore(2);// 5 потоков в semaphore
         ExecutorService executorService = Executors.newFixedThreadPool(5); //5 потоков в Pool
         for (int i = 0; i < 20; i++) {
-            executorService.execute(new MyThread("A"));
-            executorService.execute(new MyThread("B"));
-            executorService.execute(new MyThread("C"));
-            executorService.execute(new MyThread("D"));
-            executorService.execute(new MyThread("E"));
+            executorService.execute(new MyThread("A",semaphore));
+            executorService.execute(new MyThread("B",semaphore));
+            executorService.execute(new MyThread("C",semaphore));
+            executorService.execute(new MyThread("D",semaphore));
+            executorService.execute(new MyThread("E",semaphore));
 
         }
         executorService.shutdown();
@@ -28,10 +29,11 @@ class MyThread extends Thread {
 
     String name;
 
-    Semaphore semaphore = new Semaphore(5);// 5 потоков в semaphore
+    Semaphore semaphore;
 
-    public MyThread(String name) {
+    public MyThread(String name, Semaphore semaphore) {
         this.name = name;
+        this.semaphore = semaphore;
     }
 
     public void run() {
